@@ -1,0 +1,60 @@
+
+*{
+
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient( 45deg, green, green);
+}
+
+h1{
+    color: yellow;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 6rem;
+    text-shadow: 0 px;
+}
+
+h1:hover{
+    text-shadow: 0 5px 20px rgba(243, 241, 241, 0.133);
+}
+
+h1::before, h1::after{
+    content: attr(data-text);
+    position:absolute ;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    display: block;
+    width: 100%;
+}
+
+h1:hover::before{
+    top: -100px;
+    right: 40px;
+}
+
+h1:hover::after {
+    top: -40px;
+    left: 40px;
+}
+
+footer{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
